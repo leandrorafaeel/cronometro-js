@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #121212;
+    color: var(--purple-color);
+    font-family: 'Baloo 2', cursive;
+}
+:root{
+    --purple-color: #bb86fc;
+    --white-color: #fff;
+    --dark-color: #111;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--purple-color);
+}
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.light{
+    text-align: center;
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.cronometro{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.relogio{
+    font-family: 'Quantico', sans-serif;
+    border: 10px solid var(--purple-color);
+    padding: 30px;    
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--white-color);
+}
+.relogio i{
+    font-size: 2.5rem;
+    margin-bottom: 70px;    
+}
+.relogio p{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+.controle i{
+    margin-right: 45px;
+    cursor: pointer;
+    background-color: #000;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.controle i:last-child{
+    margin-right: 0;
+}
+footer{
+    margin-top: 30px;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(10, 9, 9);
+}
+footer a{
+    color: var(--purple-color);
+}
+/*LIGHT MODE*/
+.light-mode{
+    background-color: #f5f5f5;
+}
+.light-mode h1{
+    color: var(--dark-color);
+}
+.light-mode .relogio{
+    border: 10px solid var(--dark-color);
+}
+.light-mode .relogio i{
+    color: var(--dark-color);
+}
+.light-mode .relogio p{
+    color: var(--dark-color);
+}
+.light-mode .controle i{
+    color: var(--white-color);
+}
+.light-mode .light{
+    color: var(--dark-color);
+}
+.light-mode footer{
+    background-color: #fff;
+    color: #111;
+}
+
+/*BREACKPOINT*/
+@media (min-width: 420px) and (max-width: 780px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .relogio{  
+        height: 210px;
+        width: 210px;
+    }
+    .relogio i{  
+        font-size: 1.5rem;
+        margin-bottom: 45px;
+    }
+    .relogio p{  
+       font-size: 1.3rem;
+    }
+}
